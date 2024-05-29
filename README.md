@@ -1,4 +1,4 @@
-# USB Payload with Raspberry Pi Pico
+# Payload in Ducky Script for Raspberry Pi Pico
 
 ## Overview
 
