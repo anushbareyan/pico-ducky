@@ -1,0 +1,46 @@
+DELAY 1000
+WINDOWS r
+DELAY 1000
+STRING powershell
+ENTER
+DELAY 1000
+STRING Start-BitsTransfer -Source "https://www.unifiedremote.com/download/windows" -Destination "$HOME\Downloads\ServerSetup-1.exe"
+ENTER
+DELAY 10000
+DELAY 1000
+ENTER
+DELAY 3000
+WINDOWS r
+DELAY 1000
+STRING powershell
+ENTER
+DELAY 1000
+STRING cd .\Downloads\
+ENTER
+STRING ls
+ENTER
+STRING Start-Process -FilePath (Get-ChildItem -Filter "ServerSetup-*.exe" | Select-Object -First 1).FullName
+ENTER
+DELAY 3000
+TAB
+DELAY 1000
+TAB
+DELAY 1000
+ENTER
+DELAY 1000
+TAB
+DELAY 1000
+UPARROW
+DELAY 1000
+ENTER
+ENTER
+ENTER
+ENTER
+ENTER
+DELAY 5000
+ENTER
+WINDOWS
+DELAY 10000
+STRING Unified Remote
+ENTER
+DELAY 15000
